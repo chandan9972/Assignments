@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+
+    <style>
+     .moon{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(243, 226, 196);
+        animation-name: glow;
+        animation-duration: 5s;
+
+
+        }
+        body
+            {
+                background-color:rgb(1, 1, 27)
+
+        }
+        @keyframes glow{
+            0%{margin-left:0px;margin-top: 0px;background-image: linear-gradient(red,blue);}
+            25%{margin-left:200px;margin-top: 0px;background-image: linear-gradient(black,white);}
+            50%{margin-left:200px;margin-top: 200px;background-image: linear-gradient(yellow,blue);}
+            75%{margin-left:0px;margin-top: 200px;background-image: linear-gradient(red,blue);}
+            100%{margin-left:0px;margin-top: 0px;background-image: linear-gradient(orange,rgb(0, 255, 94));}
+            
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="moon"></div>
+</body>
+</html>
